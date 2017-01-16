@@ -1,0 +1,142 @@
+$primaryColor: #333;
+$defaultHeight: 720px;
+
+html, body {
+    height: 100%;
+}
+#openMenu {
+    margin: 2%;
+    padding: 15px;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgba(black, 0.5);
+    width: 50px;
+    height: 50px;
+}
+
+#hero {
+    z-index: 1;
+    width: 100%;
+    height: $defaultHeight;
+}
+.parallax {
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    img {
+        width: 40%;
+        text-align: center;
+        margin: 15% 30%;
+
+    }
+    h1, h2 {
+        text-align: center;
+        color: white;
+    }
+}
+
+.first {
+    background-image: url("../images/hero.jpeg");
+}
+
+.second {
+    background-image: url("../images/hero2.jpeg");
+}
+
+#vantagens {
+    height: $defaultHeight;
+    padding: 5% 0;
+    background-color: $primaryColor;
+    color: white;
+
+    i {
+        padding: 0 33%;
+        margin: 5% 0;
+    }
+    .call {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+#aula-experimental {
+    height: $defaultHeight;
+
+    .box-aula {
+        height: 40%;
+        background-color: rgba(white, 0.5);
+        margin-top: 20%;
+        padding: 5%;
+        text-align: center;
+        color: $primaryColor;
+        font-weight: bold;
+    }
+}
+#contato {
+    height: $defaultHeight;
+    color: $primaryColor;
+
+    h3 {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    div:first-child {
+        margin-top: 15%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .email {
+        font-weight: bold;
+        text-align: center;
+    }
+}
+footer {
+    background-color: $primaryColor;
+    height: 10%;
+    padding: 2% 0;
+    box-sizing: border-box;
+    color: white;
+    address {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+        height: 568px;
+        img {
+            margin-top: 55%;
+        }
+    }
+    #vantagens {
+        height: 1780px;
+        text-align: center;
+    }
+    #contato {
+        height: 568px;
+        color: $primaryColor;
+
+        h3 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        div:first-child {
+            margin-top: 20%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .email {
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

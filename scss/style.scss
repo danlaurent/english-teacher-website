@@ -18,7 +18,9 @@ html, body {
 #hero {
     z-index: 1;
     width: 100%;
-    height: $defaultHeight;
+}
+#menu {
+    background-color: white;
 }
 .parallax {
     width: 100%;
@@ -46,11 +48,13 @@ html, body {
 
 .second {
     background-image: url("../images/hero2.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
 }
 
 #vantagens {
-    height: $defaultHeight;
-    padding: 5% 0;
+    padding: 1% 0;
     background-color: $primaryColor;
     color: white;
 
@@ -65,7 +69,6 @@ html, body {
 }
 
 #aula-experimental {
-    height: $defaultHeight;
 
     .box-aula {
         height: 40%;
@@ -78,7 +81,6 @@ html, body {
     }
 }
 #contato {
-    height: $defaultHeight;
     color: $primaryColor;
 
     h3 {
@@ -87,7 +89,7 @@ html, body {
     }
 
     div:first-child {
-        margin-top: 15%;
+        margin-top: 5%;
         text-align: center;
         box-sizing: border-box;
     }
@@ -98,11 +100,13 @@ html, body {
     }
 }
 footer {
+    width: 100%;
     background-color: $primaryColor;
     height: 10%;
     padding: 2% 0;
     box-sizing: border-box;
     color: white;
+    text-align: center;
     address {
         text-align: center;
     }
@@ -110,17 +114,14 @@ footer {
 
 @media screen and (max-width: 768px) {
     #hero {
-        height: 568px;
         img {
             margin-top: 55%;
         }
     }
     #vantagens {
-        height: 1780px;
         text-align: center;
     }
     #contato {
-        height: 568px;
         color: $primaryColor;
 
         h3 {

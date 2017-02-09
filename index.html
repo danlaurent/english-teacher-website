@@ -9,42 +9,43 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
   <body>
     <div id="fullpage">
       <div id="menu" class="right">
       </div>
-      <div id="hero" class="section">
+      <div id="hero" class="section first">
         <div class="parallax first">
           <div class="row">
             <div class="small-12 large-8 small-centered large-centered columns">
-              <img data-aos="zoom-in" data-aos-duration="2200" data-aos-once="false" src="./images/convegram.svg" alt="apresentação">
+              <img class="apresentacao is-animated" src="./images/convegram.svg" alt="apresentação">
             </div>
           </div>
           <div class="row">
-            <div data-aos="fade-in" data-aos-duration="2200" data-aos-once="false" class="small-12 large-8 small-centered large-centered columns">
+            <div class="small-12 large-8 small-centered large-centered columns teacher">
               <h1>Danilo Gutierrez Figueiredo</h1>
               <h2>Professor Particular de Inglês</h2>
             </div>
           </div>
         </div>
       </div>
-      <div id="vantagens" class="section">
+      <div id="vantagens" class="section second">
         <div class="row">
-          <div class="small-12 large-4 columns">
+          <div class="small-12 large-4 columns is-animated">
           <i class="fa fa-clock-o fa-5x"></i>
             <p>Já pensou em estudar inglês mas nunca acha tempo e ainda mais com o caos da locomoção urbana?<br><br>
             Está cansado de livro texto com um grupo onde você repete baixinho por vergonha dos outros ouvirem?<br><br>
             Ou até mesmo acha que aquele conteúdo não tem nada a ver com a viagem para Bahamas que você vai fazer mês que vem e ainda quer se preparar por não achar sua conversação ou compreensão boas o suficiente?<br><br>
             Bem, para isso existem professores particulares como eu!</p>  
           </div>
-          <div class="small-12 large-4 columns">
+          <div class="small-12 large-4 columns is-animated">
             <i class="fa fa-music fa-5x"></i>
             <p>Meu método é completamente voltado para o aluno. Utilizo materiais variados de acordo com a necessidade individual do aluno, sempre visando os seus interesses.<br><br>
             Gosta de música, séries, livros?  Vamos trabalhar o máximo possível com isso!<br><br>
             Eu acredito que não tem alguém que não possa aprender inglês, a chave é ligar o estudo com algo prazeroso e familiar. Ter um professor particular que presta atenção em você e oferece um diálogo aberto torna o aprendizado bem mais fácil.</p>
           </div>
-          <div class="small-12 large-4 columns">
+          <div class="small-12 large-4 columns is-animated">
             <i class="fa fa-skype fa-5x"></i>
             <p>Ache os melhores horários e formas para você estudar inglês!<br><br>
             Trabalho com aulas por skype - sem restrições geográficas - ou presenciais. Sempre escolhendo com o aluno os melhores dias e horários.<br><br>
@@ -52,16 +53,16 @@
           </div>
         </div>
         <div class="row">
-          <div class="call small-12 large-12 small-centered large-centered columns">
+          <div class="call small-12 large-12 small-centered large-centered columns is-animated__single">
             <p>Quer fazer aula com seus amigos ou colegas de trabalho?<br>
             Tenho planos de aulas para até 4 alunos em caso de grupo e em caso de empresas trabalho com até 6 pessoas em um grupo.</p>
           </div>
         </div>
       </div>
-      <div id="aula-experimental" class="section">
-        <div class="second">
+      <div id="aula-experimental" class="section third">
+        <div class="secondParallax">
           <div class="row">
-            <div class="box-aula small-12 large-12 columns">
+            <div class="box-aula small-12 large-12 columns is-animated">
               <p>Para que você não dê tiros no escuro, eu ofereço um encontro por skype ou pessoalmente sem nenhum compromisso. Assim, eu posso entender suas necessidades, fazer um breve nivelamento e nos conhecemos melhor para que possamos traçar o formato das primeiras aulas e depois irmos construindo juntos o aprendizado. <br><br>
               “Mas Danilo, eu não sei nada, nem precisa de nivelamento”, então a gente faz uma primeira aula experimental!</p>
               <span>Vamos marcar?</span>
@@ -69,14 +70,14 @@
           </div>
         </div>
       </div>
-      <div id="contato" class="section">
+      <div id="contato" class="section fourth">
         <div class="row">
           <div class="small-12 large-12 columns">
             <h3>Ficou Interessado?</h3>
           </div>
         </div>
         <div class="row">
-          <div class="small-12 large-12 small-centered large-centered columns">
+          <div class="small-12 large-12 small-centered large-centered columns contato">
             <p>Entre em contato pelo e-mail:</p>
             <span class="email">danilogfigueiredo@gmail.com</span>
           </div>
@@ -92,20 +93,8 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        menu: '#menu',
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-        navigationPosition: 'right',
-        navigation: true,
-        responsiveWidth: 1024
-      });
-    });
-      AOS.init();
-    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>
